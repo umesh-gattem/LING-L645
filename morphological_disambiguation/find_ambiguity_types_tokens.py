@@ -6,6 +6,9 @@ import numpy as np
 import pandas as pd
 
 output_directory = "results"
+os.makedirs(output_directory, exist_ok=True)
+
+
 def plot_analysis(language, unique_tokens, ambiguity_types, ambiguity_tokens, types_percent, tokens_percent):
     fig, (ax1, ax2) = plt.subplots(nrows=2, sharex=True)
     fig.suptitle(f"Analysis for '{language}' Language", fontsize=16)
@@ -66,11 +69,13 @@ def ambuiguity_types_tokens(languages_directory):
                 ambiguity_types += 1
                 ambiguity_tokens += frequencies[word]
 
+        types = sorted(types.items(), key=lambda x: len(x[1]))
         with open(f"{output_directory}/{subdir.split('/')[-1]}_types.txt", "w") as outfile:
             outfile.write(str(types))
         frequencies = sorted(frequencies.items(), key=lambda x: x[1])
-        with open(f"{output_directory}/{subdir.split('/')[-1]}_frequencies.json", "w") as file:
-            json.dump(frequencies, file)
+        with open(f"{output_directory}/{subdir.split('/')[-1]}_frequencies.txt", "w") as file:
+            file.write(str(frequencies))
+            # json.dump(frequencies, file)
 
         language = subdir.split('/')[-1]
         total_tokens = total_tokens
