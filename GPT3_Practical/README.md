@@ -16,9 +16,10 @@ Github Link : https://github.com/umesh-gattem/LING-L645/tree/GPT3-practical/GPT3
 
 ### TASK 2 :
 
-Given the abstract of a research paper, generate it's title
-
-
+1. Given an abstract of a research paper, determine the number of shots required to generate a title as similar as possible to the actual title
+2. Feed examples to GPT-3 through the API provided by OpenAI
+3. Use BLEU Score to compare the predicted title with the ground truth
+4. Comment on your learnings
 
 
 ### TASK 3 : (TAKE AWAY HOME)
