@@ -23,7 +23,7 @@ Given the abstract of a research paper, generate it's title
 
 ###TASK 3 : (TAKE AWAY HOME)
 
-1. In this task we compare the performance of GPT3 with any fine-tuning Language Model. 
+1. In this task we will compare the performance of GPT3 with any fine-tuning Language Model. 
 2. For our ease, let’s take the reference of our last practical Seq_to_Seq translation use case.
 3. Let’s solve the problem using the Bahdinau_Attention fine-tuning model and solve the same using the GPT3 and compare the metrics and results.
 
