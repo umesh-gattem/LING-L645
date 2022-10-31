@@ -21,7 +21,6 @@ Github Link : https://github.com/umesh-gattem/LING-L645/tree/GPT3-practical/GPT3
 3. Use BLEU Score to compare the predicted title with the ground truth
 4. Comment on your learnings
 
-
 ### TASK 3 : (TAKE AWAY HOME)
 
 1. In this task we will compare the performance of GPT3 with any fine-tuning Language Model. 
